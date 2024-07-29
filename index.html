@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shillong Teer Result</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #eaf4e6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #ffffff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            border: 2px solid #4CAF50;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .result {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+            padding: 15px;
+            background: #f9fff9;
+            border-radius: 5px;
+            border: 1px solid #d4edda;
+        }
+        .result span {
+            font-size: 1.5em;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Shillong Teer Result</h1>
+
+        <div class="result">
+            <span>Date:</span>
+            <span id="resultDate">---</span>
+        </div>
+        <div class="result">
+            <span>First Round:</span>
+            <span id="firstRound">---</span>
+        </div>
+        <div class="result">
+            <span>Second Round:</span>
+            <span id="secondRound">---</span>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 Shillong Teer Result. All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        // Simulating fetching results
+        const storedDate = localStorage.getItem('resultDate') || '---';
+        const storedFirstRound = localStorage.getItem('firstRound') || '---';
+        const storedSecondRound = localStorage.getItem('secondRound') || '---';
+
+        document.getElementById('resultDate').textContent = storedDate;
+        document.getElementById('firstRound').textContent = storedFirstRound;
+        document.getElementById('secondRound').textContent = storedSecondRound;
+    </script>
+</body>
+</html>
